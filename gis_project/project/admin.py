@@ -5,3 +5,11 @@ from .models import Location, UserData
 
 admin.site.register(Location)
 admin.site.register(UserData)
+
+# Current users:
+
+# Username: admin
+# Password: 1234
+
+# Username: testing
+# Password: Passwort12345

@@ -10,8 +10,8 @@ class UserData (AbstractUser):
     class Meta:
         verbose_name_plural = 'UserData'
 
-    number_of_games_played = models.IntegerField(default= -1)
-    sum_of_points = models.BigIntegerField(default= -1)
+    number_of_games_played = models.IntegerField(default= 0)
+    sum_of_points = models.BigIntegerField(default= 0)
 
 
 

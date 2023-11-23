@@ -1,0 +1,55 @@
+{% extends "base_generic.html" %}
+
+{% block script %}
+<script src="/static/scripts/Profile.js">
+    window.addEventListener("load", (calcAverage({{request.user.number_of_games_played}}, {{request.user.sum_of_points}})));
+</script>
+{% endblock %}
+
+{% block content%}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Number of Games Played:</b>
+        </div>
+        <div class="col" align="left">
+            <a>{{request.user.number_of_games_played}}</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Sum of Points:</b>
+        </div>
+        <div class="col" align="left">
+            <a>{{request.user.sum_of_points}}</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Average Points per Game:</b>
+        </div>
+        <div class="col" align="left">
+            <p id="points_per_game"></p>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+</div>
+{% endblock %}

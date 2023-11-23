@@ -8,9 +8,25 @@ from django.urls import reverse_lazy
 from .forms import RegisterForm
 # Create your views here.
 
+
+def homepage (request):
+    return render(request, 'homepage.html')
+
 @login_required
-def index (request):
-    return render(request, 'base_generic.html')
+def gamepage (request):
+    return render(request, "gamepage.html")
+
+@login_required
+def leaderboard (request):
+    return render(request, "leaderboard.html")
+
+@login_required
+def logout (request):
+    return render(request, "logged_out.html")
+
+@login_required
+def profile (request):
+    return render(request, "profile.html")
 
 
 class RegisterView (generic.CreateView):

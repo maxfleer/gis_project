@@ -13,3 +13,12 @@ admin.site.register(UserData)
 
 # Username: testing
 # Password: NLBJHohiu8576KVGH
+
+# Username: LeadTest1
+# Password: KJNIxdfctrIOJ
+
+# Username: LeadTest2
+# Password: DRXopkinjm&%/T
+
+# Username: LeadTest3
+# Password: XDRT8z7HIBJ

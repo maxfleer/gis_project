@@ -1,5 +1,35 @@
 {% extends "base_generic.html" %}
 
 {% block content%}
-<h2>Leaderboard</h2>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Username</h2>
+        </div>
+        <div class="col">
+            <h2>Games Played</h2>
+        </div>
+        <div class="col">
+            <h2>Sum of Points</h2>
+        </div>
+    </div>
+    {% for user in users %}
+    <div class="row">
+        <div class="col">
+            {{user.username}}
+        </div>
+        <div class="col">
+            {{user.number_of_games_played}}
+        </div>
+        <div class="col">
+            {{user.sum_of_points}}
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
 {% endblock %}

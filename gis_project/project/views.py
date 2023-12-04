@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
 from django.urls import reverse_lazy
 from .forms import RegisterForm
+from .models import *
 # Create your views here.
 
 
@@ -16,9 +17,9 @@ def homepage (request):
 def gamepage (request):
     return render(request, "gamepage.html")
 
-@login_required
 def leaderboard (request):
-    return render(request, "leaderboard.html")
+    users = UserData.objects.all()
+    return render(request, "leaderboard.html", {"users":users})
 
 @login_required
 def logout (request):

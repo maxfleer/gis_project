@@ -1,12 +1,8 @@
 {% extends "base_generic.html" %}
 
-{% block script %}
-<script src="/static/scripts/Profile.js">
-    window.addEventListener("load", (calcAverage({{request.user.number_of_games_played}}, {{request.user.sum_of_points}})));
-</script>
-{% endblock %}
-
 {% block content%}
+
+{% load django_template_maths %}
 
 <div class="container-fluid">
     <div class="row">
@@ -45,7 +41,7 @@
             <b>Average Points per Game:</b>
         </div>
         <div class="col" align="left">
-            <p id="points_per_game"></p>
+            <a>{{request.user.sum_of_points|div:request.user.number_of_games_played|floatformat:2}}</a>
         </div>
         <div class="col-2">
 

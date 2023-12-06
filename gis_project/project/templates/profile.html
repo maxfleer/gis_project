@@ -1,0 +1,51 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+
+{% load django_template_maths %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Number of Games Played:</b>
+        </div>
+        <div class="col" align="left">
+            <a>{{request.user.number_of_games_played}}</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Sum of Points:</b>
+        </div>
+        <div class="col" align="left">
+            <a>{{request.user.sum_of_points}}</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-2">
+
+        </div>
+        <div class="col" align="right">
+            <b>Average Points per Game:</b>
+        </div>
+        <div class="col" align="left">
+            <a>{{request.user.sum_of_points|div:request.user.number_of_games_played|floatformat:2}}</a>
+        </div>
+        <div class="col-2">
+
+        </div>
+    </div>
+</div>
+{% endblock %}

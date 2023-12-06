@@ -1,0 +1,76 @@
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block script %}
+    {% endblock %}
+    <link rel="stylesheet" href="/static/css/classes.css">
+    {% load bootstrap4 %}
+    {% load static %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript jquery='full' %}
+    
+    {% block title %}
+      <title>Project Website</title>
+    {% endblock %}
+  </head>
+  <body>
+    <div style="position relative;margin-top:15px;margin-bottom:15px;">
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg">
+              <a href="{% url "homepage" %}" class="btn btn-primary">Menu</a>
+              <a href="{% url "gamepage" %}" class="btn btn-primary">Start Game</a>
+              <a href="{% url "leaderboard" %}" class="btn btn-primary">Leaderboard</a>
+            </div>
+            <div class="col-lg">
+            </div>
+            <div class="col-lg" align="right">
+              {% if user.is_authenticated %}
+                <a href="{% url "logout" %}" class="btn btn-primary" align="right">Logout</a>
+              {% else %}
+                <a href="{% url "login" %}" class="btn btn-primary" align="right">Login</a>
+              {% endif %}
+              <a href="{% url "profile" %}" class="btn btn-primary" align="right">Profile</a>
+            </div>
+          </div>
+        </div>
+        </br>
+        </br> 
+      </header>
+
+      {% block content %}
+
+      <h1>LOADING ERROR</h1>
+
+      {% endblock %}
+
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg">
+              </br>
+              </br>
+              </br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <a>Copyright Technische Hochschule Brandenburg</a>
+            </div>
+            <div class="col-lg" align="center">
+              <a href="https://github.com/maxfleer/gis_project">
+                {% load static %}
+                <img src="{% static 'github_logo.png' %}" height="32" width="32">
+              </a>
+            </div>
+            <div class="col-lg">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

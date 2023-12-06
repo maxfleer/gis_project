@@ -1,0 +1,241 @@
+/* Page 1 */
+
+position: relative;
+width: 19262px;
+height: 12895px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 19262px;
+height: 2442px;
+left: calc(50% - 19262px/2);
+top: 0px;
+
+background: #EAE2E2;
+border-radius: 55px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 1395px;
+height: 1445px;
+left: 8933px;
+top: 0px;
+
+background: url(GeoGuessr_Globe.png);
+
+
+/* Rectangle 25 */
+
+position: absolute;
+width: 6237px;
+height: 2899px;
+left: 6512px;
+top: 2584px;
+
+background: #FAFAFA;
+border: 50px solid #000000;
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 1569px;
+height: 1330px;
+left: 8846px;
+top: 3437px;
+
+background: url(play-button.png);
+
+
+/* "In the captivating world of 'Gueoguesser,' players are invited to test their geographical knowledge and intuition. The game begins by presenting users with a beautiful photo of a famous landmark or park from around the world. These captivating images provide them with a visual glimpse of the location they will need to identify. Then, the challenge begins. Players are transported to a global geographical map, and their task is to point on the map the precise location of the landmark or park they've just seen in the photo. The exciting twist is that players have no additional information to guide them. It all relies on their ability to memorize the photo and estimate the location accurately. */
+
+position: absolute;
+width: 8454px;
+height: 4080px;
+left: 5404px;
+top: 6448px;
+
+font-family: 'Adamina';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 272px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Frame 8 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 437px 877px 295px;
+gap: 10px;
+
+position: absolute;
+width: 3060px;
+height: 922px;
+left: 8101px;
+top: 697px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* menu */
+
+width: 1498px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 3140px;
+height: 833px;
+left: 8061px;
+top: 697px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* Startgame */
+
+width: 3098px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 12 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 4499.32px;
+height: 919.51px;
+left: 7383px;
+top: 697px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+transform: rotate(0.34deg);
+
+
+/* Lederboard */
+
+width: 3478px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+transform: rotate(-0.03deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail 1 */
+
+position: absolute;
+width: 952px;
+height: 966px;
+left: 9155px;
+top: 697px;
+
+background: url(png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail.png);
+
+
+/* Login */
+
+position: absolute;
+width: 1195.49px;
+height: 513.74px;
+left: 9031px;
+top: 1671.68px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 400px;
+line-height: 484px;
+
+color: #000000;
+
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);

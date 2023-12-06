@@ -1,0 +1,600 @@
+/* Page 5 */
+
+position: relative;
+width: 19262px;
+height: 12895px;
+
+background: #FFFFFF;
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 19262px;
+height: 2442px;
+left: calc(50% - 19262px/2);
+top: 2px;
+
+background: #EAE2E2;
+border-radius: 55px;
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 1395px;
+height: 1445px;
+left: 0px;
+top: 0px;
+
+background: url(GeoGuessr_Globe.png);
+
+
+/* Rectangle 8 */
+
+position: absolute;
+width: 19230px;
+height: 1184px;
+left: 0px;
+top: 11731px;
+
+background: #FDF9F9;
+
+
+/* Rectangle 29 */
+
+position: absolute;
+width: 19230px;
+height: 1184px;
+left: 0px;
+top: 11731px;
+
+background: #FDF9F9;
+
+
+/* Copyright gueoguesser */
+
+position: absolute;
+width: 5417.27px;
+height: 700.21px;
+left: 527px;
+top: 12062.74px;
+
+font-family: 'Calistoga';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 260px;
+
+color: #000000;
+
+transform: rotate(-0.5deg);
+
+
+/* github-logo 1 */
+
+position: absolute;
+width: 535px;
+height: 535px;
+left: 8682px;
+top: 12015px;
+
+background: url(github-logo.png);
+
+
+/* Frame 7 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 437px 877px 295px;
+gap: 10px;
+
+position: absolute;
+width: 3060px;
+height: 922px;
+left: 3035px;
+top: 562px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* menu */
+
+width: 1498px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 3140px;
+height: 905px;
+left: 6857px;
+top: 570px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* Startgame */
+
+width: 3098px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 4499.32px;
+height: 919.51px;
+left: 10571.42px;
+top: 600px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+transform: rotate(0.34deg);
+
+
+/* Lederboard */
+
+width: 3478px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+transform: rotate(-0.03deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail 1 */
+
+position: absolute;
+width: 952px;
+height: 966px;
+left: 17421px;
+top: 509px;
+
+background: url(png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail.png);
+
+
+/* Login */
+
+position: absolute;
+width: 1195.49px;
+height: 513.74px;
+left: 17297.51px;
+top: 1636.68px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 400px;
+line-height: 484px;
+
+color: #000000;
+
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Rectangle 27 */
+
+position: absolute;
+width: 13312px;
+height: 7817px;
+left: 5918px;
+top: 2492px;
+
+background: #F7F7F7;
+border: 100px solid #000000;
+
+
+/* User 1 */
+
+position: absolute;
+width: 1285px;
+height: 504px;
+left: 7858px;
+top: 3237px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* User 1 */
+
+position: absolute;
+width: 1285px;
+height: 504px;
+left: 1548px;
+top: 4134px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Line 4 */
+
+position: absolute;
+width: 7865.06px;
+height: 0px;
+left: 7174px;
+top: 2492px;
+
+border: 100px solid #000000;
+transform: rotate(89.77deg);
+
+
+/* Line 5 */
+
+position: absolute;
+width: 7865.06px;
+height: 0px;
+left: 12228px;
+top: 2444px;
+
+border: 100px solid #000000;
+transform: rotate(89.77deg);
+
+
+/* User 2 */
+
+position: absolute;
+width: 1359px;
+height: 504px;
+left: 7858px;
+top: 4534px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* User 1 */
+
+position: absolute;
+width: 1285px;
+height: 504px;
+left: 1954px;
+top: 6425px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* User 3 */
+
+position: absolute;
+width: 1359px;
+height: 504px;
+left: 7858px;
+top: 6048px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Data 1 */
+
+position: absolute;
+width: 1320px;
+height: 504px;
+left: 12574px;
+top: 3237px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Data 2 */
+
+position: absolute;
+width: 1394px;
+height: 504px;
+left: 12574px;
+top: 4534px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Data 3 */
+
+position: absolute;
+width: 1393px;
+height: 504px;
+left: 12574px;
+top: 6048px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* 1 */
+
+position: absolute;
+width: 335px;
+height: 504px;
+left: 6288px;
+top: 3237px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* 2 */
+
+position: absolute;
+width: 505px;
+height: 504px;
+left: 6035px;
+top: 4534px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* 3 */
+
+position: absolute;
+width: 505px;
+height: 504px;
+left: 6017px;
+top: 6048px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+
+
+
+/* Most Points */
+
+position: absolute;
+width: 2605px;
+height: 488px;
+left: 939px;
+top: 3609px;
+
+font-family: 'Overlock';
+font-style: normal;
+font-weight: 900;
+font-size: 400px;
+line-height: 488px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #08FF03;
+
+
+
+/* Most games Played */
+
+position: absolute;
+width: 4191px;
+height: 488px;
+left: 939px;
+top: 5662px;
+
+font-family: 'Overlock';
+font-style: normal;
+font-weight: 900;
+font-size: 400px;
+line-height: 488px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #0AF905;
+
+
+
+/* Average Points */
+
+position: absolute;
+width: 3237px;
+height: 488px;
+left: 939px;
+top: 7715px;
+
+font-family: 'Overlock';
+font-style: normal;
+font-weight: 900;
+font-size: 400px;
+line-height: 488px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #66F90B;
+
+
+
+/* User 2 */
+
+position: absolute;
+width: 1359px;
+height: 504px;
+left: 1954px;
+top: 8635px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 500;
+font-size: 400px;
+line-height: 504px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #000000;
+

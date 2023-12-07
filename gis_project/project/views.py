@@ -18,7 +18,13 @@ def gamepage (request):
     return render(request, "gamepage.html")
 
 def leaderboard (request):
-    users = UserData.objects.all()
+    users = list(UserData.objects.all())
+
+    users_filtered = [obj for obj in users if obj.sum_of_points > 0]
+    users = [obj for obj in users_filtered if obj.number_of_games_played > 0]
+
+    users.sort(key = lambda x: (x.sum_of_points / x.number_of_games_played), reverse=True)
+
     return render(request, "leaderboard.html", {"users":users})
 
 @login_required

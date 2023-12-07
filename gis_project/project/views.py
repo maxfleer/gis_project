@@ -7,6 +7,7 @@ from django.views import generic
 from django.urls import reverse_lazy
 from .forms import RegisterForm
 from .models import *
+from geopy import distance
 # Create your views here.
 
 
@@ -14,8 +15,21 @@ def homepage (request):
     return render(request, 'homepage.html')
 
 @login_required
-def gamepage (request):
-    return render(request, "gamepage.html")
+def gamepage (request, user_id = 0):
+    if (request.method == "POST"):
+        user = UserData.objects.get(id = user_id)
+
+        points = calcPoints()
+
+        if user:
+            user.sum_of_points += points
+            user.number_of_games_played + 1
+            user.save()
+
+        return render(request, "gamepage.html")
+    else:    
+        return render(request, "gamepage.html")
+
 
 def leaderboard (request):
     users = list(UserData.objects.all())
@@ -34,6 +48,15 @@ def logout (request):
 @login_required
 def profile (request):
     return render(request, "profile.html")
+
+
+def calcPoints (longitude_db, latitude_db, longitude_player, latitude_player):
+    dist = distance.geodesic((longitude_db, latitude_db), (longitude_player, latitude_player)).km
+    if (dist < 25): return 1000
+
+    dist = dist - 25
+    if (dist - 1000 >= 0): return 0
+    else: return 1000 - dist
 
 
 class RegisterView (generic.CreateView):

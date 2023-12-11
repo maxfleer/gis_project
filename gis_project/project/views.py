@@ -8,6 +8,7 @@ from django.urls import reverse_lazy
 from .forms import RegisterForm
 from .models import *
 from geopy import distance
+import random
 # Create your views here.
 
 
@@ -15,20 +16,38 @@ def homepage (request):
     return render(request, 'homepage.html')
 
 @login_required
-def gamepage (request, user_id = 0):
+def gamepreview (request):
+    return render(request, "gamepreview.html")
+
+@login_required
+def gamestart (request, user_id = 0, game_location = None, longitude_player = 0, latitude_player = 0):
     if (request.method == "POST"):
         user = UserData.objects.get(id = user_id)
 
-        points = calcPoints()
+        location_name = "Error"
+        longitude_db = 0
+        latitude_db = 0
+        points = 0
 
-        if user:
+        if user and game_location:
+
+            location_name = game_location.location_name
+            longitude_db = game_location.longitude
+            latitude_db = game_location.latitude
+
+            points = calcPoints(longitude_db, latitude_db, longitude_player, latitude_player)
             user.sum_of_points += points
             user.number_of_games_played + 1
             user.save()
 
-        return render(request, "gamepage.html")
+        return render(request, "gameresult.html", {"points":points, "location_name":location_name})
+    
     else:    
-        return render(request, "gamepage.html")
+
+        locations = list(Location.objects.all())
+        number = random.randint(0, len(locations) - 1)
+        game_location = locations[number]
+        return render(request, "gamestart.html", {"game_location":game_location})
 
 
 def leaderboard (request):

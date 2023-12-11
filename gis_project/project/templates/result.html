@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+
+<div class="container">
+    <div class="row">
+        <div class="col" align="center">
+            Congratulations {{request.user.username}} !
+        </div>
+        <div class="col" align="center">
+            You just achieved {{ points }} points !
+        </div>
+        <div class="col" align="center">
+            The location you had to search was: {{ location_name }}
+        </div>
+    </div>
+</div>
+
+
+
+
+{% endblock %}

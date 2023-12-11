@@ -32,8 +32,8 @@
             </div>
         </div>
     </div>
-    <form action={% url "gamepage" request request.user.id %} method="POST">
-        <button type="submit" class="btn btn-primary">Submit</button>
+    <form action={% url "GETgamestart" request.user.id %} method="GET">
+        <button type="submit" class="btn btn-primary">Start Round</button>
     </form>
 </div>
 {% endblock %}

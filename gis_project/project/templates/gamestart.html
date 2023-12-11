@@ -1,0 +1,36 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+<div style="margin-left:25px;margin-right:25px;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="colNopadding">
+                <div class="row ml-0 mr-0">
+                    <div class="colNopadding" align="center">
+                <img src="{{ game_location.picture_URL_1 }}" height="250px" width="463.25px">
+                    </div>
+                    <div class="colNopadding" align="center">
+                <img src="{{ game_location.picture_URL_2 }}" height="250px" width="463.25px">
+                    </div>
+                </div>
+                <div class="row ml-0 mr-0">
+                    <div class="colNopadding" align="center">
+                <img src="{{ game_location.picture_URL_3 }}" height="250px" width="463.25px">
+                    </div>
+                    <div class="colNopadding" align="center">
+                <img src="{{ game_location.picture_URL_4 }}" height="250px" width="463.25px">
+                    </div>
+                </div>
+            </div>
+            <div class="colNopadding" align="right">
+                {% load static %}
+                <img src="{% static 'map_placeholder.jpg' %}" height="500px" width="926.5px">
+            </div>
+        </div>
+    </div>
+    <!-- HOW WE GONNA GET THE LAST TWO ARGUMENTS? -->
+    <form action={% url "POSTgamestart" request.user.id game_location longitude_player latitude_player %} method="POST">
+        <button type="submit" class="btn btn-primary">Submit Guess</button>
+    </form>
+</div>
+{% endblock %}

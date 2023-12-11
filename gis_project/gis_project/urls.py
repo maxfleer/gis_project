@@ -23,7 +23,9 @@ from project.views import RegisterView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.homepage, name='homepage'),
-    path('game/', views.gamepage, name='gamepage'),
+    path('gamepreview/', views.gamepreview, name='gamepreview'),
+    path('gamestart/<user_id>/', views.gamestart, name='GETgamestart'),
+    path('gamestart/<user_id>/<game_location>/<longitude_player>/<latitude_player>/', views.gamestart, name='POSTgamestart'),
     path('leaderboard/', views.leaderboard, name='leaderboard'),
     path('profile/', views.profile, name='profile'),
     path('accounts/', include('django.contrib.auth.urls')),

@@ -1,0 +1,417 @@
+/* Page 2 */
+
+position: relative;
+width: 19410px;
+height: 14806px;
+
+background: #FFFFFF;
+
+
+/* Login */
+
+position: absolute;
+width: 1195.49px;
+height: 513.74px;
+left: 18038.41px;
+top: 1760.86px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 400px;
+line-height: 484px;
+
+color: #000000;
+
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Rectangle 16 */
+
+position: absolute;
+width: 10103px;
+height: 7298px;
+left: 5572.51px;
+top: 4146px;
+
+background: #C6CBCD;
+border-radius: 900px;
+
+
+/* Ellipse 1 */
+
+position: absolute;
+width: 2435px;
+height: 2371px;
+left: 9318.51px;
+top: 3245px;
+
+background: url(avatar.png), #D9D9D9;
+
+
+/* Rectangle 17 */
+
+position: absolute;
+width: 8138px;
+height: 1273px;
+left: 6466.51px;
+top: 6522px;
+
+background: #19394A;
+
+
+/* Rectangle 18 */
+
+position: absolute;
+width: 8138px;
+height: 1273px;
+left: 6472.51px;
+top: 8177px;
+
+background: #19394A;
+
+
+/* Rectangle 19 */
+
+position: absolute;
+width: 1211px;
+height: 1273px;
+left: 6466.51px;
+top: 6522px;
+
+background: url(user.png);
+background-blend-mode: darken;
+
+
+/* Rectangle 20 */
+
+position: absolute;
+width: 1211px;
+height: 1273px;
+left: 6416.51px;
+top: 8177px;
+
+background: url(padlock.png);
+
+
+/* Email ID */
+
+position: absolute;
+width: 3383px;
+height: 745px;
+left: 7642.51px;
+top: 7159px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FCF8F8;
+
+
+
+/* Password */
+
+position: absolute;
+width: 3383px;
+height: 745px;
+left: 7537.51px;
+top: 8705px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #FCF8F8;
+
+
+
+/* Rectangle 21 */
+
+position: absolute;
+width: 9566px;
+height: 1339px;
+left: 5809.51px;
+top: 11143px;
+
+background: #C6CBCD;
+border-radius: 1000px;
+
+
+/* login */
+
+position: absolute;
+width: 2246px;
+height: 745px;
+left: 7051.51px;
+top: 11436px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #F9F1F1;
+
+
+
+/* register */
+
+position: absolute;
+width: 3176px;
+height: 745px;
+left: 10956.51px;
+top: 11436px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+letter-spacing: 0.08em;
+text-transform: uppercase;
+
+color: #F9F1F1;
+
+
+
+/* Rectangle 3 */
+
+position: absolute;
+width: 19410px;
+height: 2254px;
+left: calc(50% - 19410px/2);
+top: 0px;
+
+background: #EAE2E2;
+border-radius: 55px;
+
+
+/* png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail 1 */
+
+position: absolute;
+width: 964px;
+height: 991px;
+left: 17074.51px;
+top: 627px;
+
+background: url(png-transparent-login-computer-icons-password-login-black-symbol-subscription-business-model-thumbnail.png);
+
+
+/* Rectangle 10 */
+
+position: absolute;
+width: 1413px;
+height: 1482px;
+left: -105.49px;
+top: 0px;
+
+background: url(GeoGuessr_Globe.png);
+
+
+/* Login */
+
+position: absolute;
+width: 1195.49px;
+height: 513.74px;
+left: 17074.51px;
+top: 1740.68px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 400px;
+line-height: 484px;
+
+color: #000000;
+
+transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+
+
+/* Frame 7 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 437px 877px 295px;
+gap: 10px;
+
+position: absolute;
+width: 3060px;
+height: 873px;
+left: 3157.51px;
+top: 706px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* menu */
+
+width: 1498px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 3140px;
+height: 833px;
+left: 6915.51px;
+top: 785px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+
+
+/* Startgame */
+
+width: 3098px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Frame 6 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 295px 877px;
+gap: 10px;
+
+position: absolute;
+width: 4499.32px;
+height: 919.51px;
+left: 10758.93px;
+top: 714px;
+
+/* neige */
+background: #E5BDBD;
+border-radius: 500px;
+transform: rotate(0.34deg);
+
+
+/* Lederboard */
+
+width: 3478px;
+height: 630px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 500px;
+line-height: 630px;
+/* identical to box height */
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+/* rouge */
+color: #F50000;
+
+transform: rotate(-0.03deg);
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Rectangle 30 */
+
+position: absolute;
+width: 19410px;
+height: 1184px;
+left: 0px;
+top: 13622px;
+
+background: #FDF9F9;
+
+
+/* github-logo 1 */
+
+position: absolute;
+width: 535px;
+height: 535px;
+left: 9705px;
+top: 14109px;
+
+background: url(github-logo.png);
+
+
+/* Copyright gueoguesser */
+
+position: absolute;
+width: 5417.27px;
+height: 700.21px;
+left: 156px;
+top: 14261.74px;
+
+font-family: 'Calistoga';
+font-style: normal;
+font-weight: 400;
+font-size: 200px;
+line-height: 260px;
+
+color: #000000;
+
+transform: rotate(-0.5deg);

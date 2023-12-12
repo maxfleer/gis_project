@@ -20,14 +20,10 @@ def gamepreview (request):
     return render(request, "gamepreview.html")
 
 @login_required
-def gamestart (request, user_id = 0, game_location = None, longitude_player = 0, latitude_player = 0):
+def gamestart (request, user_id = 0, location_id = 1, latitude_player = 0, longitude_player = 0):
     if (request.method == "POST"):
         user = UserData.objects.get(id = user_id)
-
-        location_name = "Error"
-        longitude_db = 0
-        latitude_db = 0
-        points = 0
+        game_location = Location.objects.get(id = location_id)
 
         if user and game_location:
 
@@ -35,19 +31,21 @@ def gamestart (request, user_id = 0, game_location = None, longitude_player = 0,
             longitude_db = game_location.longitude
             latitude_db = game_location.latitude
 
-            points = calcPoints(longitude_db, latitude_db, longitude_player, latitude_player)
+            points = calcPoints(latitude_db, longitude_db, latitude_player, longitude_player)
+            distance_from_location = distance.distance((latitude_db, longitude_db), (latitude_player, longitude_player)).km
             user.sum_of_points += points
-            user.number_of_games_played + 1
+            user.number_of_games_played += 1
             user.save()
 
-        return render(request, "gameresult.html", {"points":points, "location_name":location_name})
+        return render(request, "result.html", {"points":points, "location_name":location_name, "distance_from_location":distance_from_location})
     
     else:    
 
         locations = list(Location.objects.all())
         number = random.randint(0, len(locations) - 1)
         game_location = locations[number]
-        return render(request, "gamestart.html", {"game_location":game_location})
+
+        return render(request, "gamestart.html", {"game_location":game_location, "latitude_player":40, "longitude_player":-74})
 
 
 def leaderboard (request):
@@ -69,8 +67,8 @@ def profile (request):
     return render(request, "profile.html")
 
 
-def calcPoints (longitude_db, latitude_db, longitude_player, latitude_player):
-    dist = distance.geodesic((longitude_db, latitude_db), (longitude_player, latitude_player)).km
+def calcPoints (latitude_db, longitude_db, latitude_player, longitude_player):
+    dist = distance.distance((latitude_db, longitude_db), (latitude_player, longitude_player)).km
     if (dist < 25): return 1000
 
     dist = dist - 25

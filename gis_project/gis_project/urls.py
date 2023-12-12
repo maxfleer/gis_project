@@ -25,7 +25,7 @@ urlpatterns = [
     path('', views.homepage, name='homepage'),
     path('gamepreview/', views.gamepreview, name='gamepreview'),
     path('gamestart/<user_id>/', views.gamestart, name='GETgamestart'),
-    path('gamestart/<user_id>/<game_location>/<longitude_player>/<latitude_player>/', views.gamestart, name='POSTgamestart'),
+    path('gamestart/<user_id>/<location_id>/<latitude_player>/<longitude_player>/', views.gamestart, name='POSTgamestart'),
     path('leaderboard/', views.leaderboard, name='leaderboard'),
     path('profile/', views.profile, name='profile'),
     path('accounts/', include('django.contrib.auth.urls')),

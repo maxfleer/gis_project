@@ -1,6 +1,7 @@
 {% extends "base_generic.html" %}
 
 {% block content%}
+
 <div style="margin-left:25px;margin-right:25px;">
     <div class="container-fluid">
         <div class="row">
@@ -29,7 +30,8 @@
         </div>
     </div>
     <!-- HOW WE GONNA GET THE LAST TWO ARGUMENTS? -->
-    <form action={% url "POSTgamestart" request.user.id game_location longitude_player latitude_player %} method="POST">
+    <form action={% url "POSTgamestart" request.user.id game_location.id latitude_player longitude_player %} method="POST">
+        {% csrf_token %}
         <button type="submit" class="btn btn-primary">Submit Guess</button>
     </form>
 </div>

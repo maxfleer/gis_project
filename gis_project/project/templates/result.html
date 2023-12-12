@@ -8,10 +8,13 @@
             Congratulations {{request.user.username}} !
         </div>
         <div class="col" align="center">
-            You just achieved {{ points }} points !
+            You just achieved {{ points |floatformat:2 }} points !
         </div>
         <div class="col" align="center">
             The location you had to search was: {{ location_name }}
+        </div>
+        <div class="col" align="center">
+            Distance from guess to acutal location: {{ distance_from_location |floatformat:2 }} km
         </div>
     </div>
 </div>

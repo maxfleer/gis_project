@@ -31,21 +31,21 @@ def create_folium_map(map_filepath, center_coord, location_id, user_id):
     # add popup
     folium.LatLngPopup().add_to(map)
 
-    tile_provider = xyz.Stadia.StamenWatercolor
+    #tile_provider = xyz.Stadia.StamenWatercolor
 
     # Update the URL to include the API key placeholder
-    tile_provider["url"] = tile_provider["url"] + \
-        "?api_key=3dd06860-7f01-4788-84c7-e0e74854b30d"
+    #tile_provider["url"] = tile_provider["url"] + \
+    #    "?api_key=3dd06860-7f01-4788-84c7-e0e74854b30d"
 
     # Create the folium TileLayer, specifying the API key
-    folium.TileLayer(
-        tiles=tile_provider.build_url(
-            api_key='3dd06860-7f01-4788-84c7-e0e74854b30d'),
-        attr=tile_provider.attribution,
-        name=tile_provider.name,
-        max_zoom=tile_provider.max_zoom,
-        detect_retina=True
-    ).add_to(map)
+    #folium.TileLayer(
+    #    tiles=tile_provider.build_url(
+    #        api_key='3dd06860-7f01-4788-84c7-e0e74854b30d'),
+    #    attr=tile_provider.attribution,
+    #    name=tile_provider.name,
+    #    max_zoom=tile_provider.max_zoom,
+    #    detect_retina=True
+    #).add_to(map)
 
     folium.LayerControl().add_to(map)
 

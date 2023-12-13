@@ -23,16 +23,10 @@
                     </div>
                 </div>
             </div>
-            <div class="colNopadding" align="right">
-                {% load static %}
-                <img src="{% static 'map_placeholder.jpg' %}" height="500px" width="926.5px">
+            <div class="colNopadding" align="right" height="500px" width="926.5px">
+                {{ map | safe }}
             </div>
         </div>
     </div>
-    <!-- HOW WE GONNA GET THE LAST TWO ARGUMENTS? -->
-    <form action={% url "POSTgamestart" request.user.id game_location.id latitude_player longitude_player %} method="POST">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-primary">Submit Guess</button>
-    </form>
 </div>
 {% endblock %}

@@ -1,0 +1,243 @@
+.page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.page .div {
+  background-color: #ffffff;
+  width: 19262px;
+  height: 14806px;
+  position: relative;
+}
+
+.page .overlap {
+  position: absolute;
+  width: 19253px;
+  height: 2401px;
+  top: 0;
+  left: 0;
+  background-image: url(./img/rectangle-3.svg);
+  background-size: 100% 100%;
+}
+
+.page .rectangle {
+  width: 1395px;
+  height: 1445px;
+  top: 171px;
+  left: 98px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.page .png-transparent {
+  position: absolute;
+  width: 952px;
+  height: 966px;
+  top: 478px;
+  left: 17648px;
+  object-fit: cover;
+}
+
+.page .overlap-group {
+  position: absolute;
+  width: 3060px;
+  height: 839px;
+  top: 649px;
+  left: 3968px;
+  border-radius: 500px;
+}
+
+.page .line {
+  position: absolute;
+  width: 174px;
+  height: 13px;
+  top: 801px;
+  left: 2582px;
+  object-fit: cover;
+}
+
+.page .frame {
+  width: 3060px;
+  height: 839px;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 295px 877px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .menu {
+  position: relative;
+  width: fit-content;
+  margin-top: -191.5px;
+  margin-bottom: -189.5px;
+  margin-left: -96px;
+  margin-right: -96px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .text-wrapper {
+  position: absolute;
+  width: 1180px;
+  top: 1491px;
+  left: 17687px;
+  transform: rotate(-0.41deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .startgame-wrapper {
+  width: 3140px;
+  height: 905px;
+  top: 635px;
+  left: 7224px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 295px 877px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .startgame {
+  position: relative;
+  width: fit-content;
+  margin-top: -158.5px;
+  margin-bottom: -156.5px;
+  margin-left: -856px;
+  margin-right: -856px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .lederboard-wrapper {
+  width: 4499px;
+  height: 920px;
+  top: 627px;
+  left: 10940px;
+  transform: rotate(0.34deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 295px 877px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .lederboard {
+  position: relative;
+  width: fit-content;
+  margin-top: -151.25px;
+  margin-bottom: -149.25px;
+  margin-left: -366.34px;
+  margin-right: -366.34px;
+  transform: rotate(-0.37deg);
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .img {
+  width: 4397px;
+  height: 3060px;
+  top: 2442px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.page .rectangle-2 {
+  width: 4397px;
+  height: 3060px;
+  top: 2447px;
+  left: 4397px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.page .rectangle-3 {
+  width: 4397px;
+  height: 3060px;
+  top: 5507px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.page .rectangle-4 {
+  width: 4397px;
+  height: 3060px;
+  top: 5507px;
+  left: 4397px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.page .screenshot {
+  position: absolute;
+  width: 10468px;
+  height: 6110px;
+  top: 2447px;
+  left: 8794px;
+  object-fit: cover;
+}
+
+.page .overlap-group-2 {
+  position: absolute;
+  width: 19230px;
+  height: 1184px;
+  top: 13595px;
+  left: 0;
+  background-color: #fcf8f8;
+}
+
+.page .github-logo {
+  position: absolute;
+  width: 535px;
+  height: 535px;
+  top: 213px;
+  left: 9347px;
+  object-fit: cover;
+}
+
+.page .text-wrapper-2 {
+  position: absolute;
+  width: 5417px;
+  top: 397px;
+  left: 368px;
+  transform: rotate(-0.5deg);
+  font-family: "Calistoga-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 200px;
+  letter-spacing: 0;
+  line-height: normal;
+}

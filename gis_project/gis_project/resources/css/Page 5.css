@@ -1,0 +1,404 @@
+.page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 19262px;
+  height: 12895px;
+  position: relative;
+}
+
+.page .overlap-group {
+  width: 19330px;
+  height: 10409px;
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+.page .rectangle {
+  position: absolute;
+  width: 19262px;
+  height: 2442px;
+  top: 2px;
+  left: 0;
+}
+
+.page .img {
+  position: absolute;
+  width: 1395px;
+  height: 1445px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.page .frame {
+  width: 3060px;
+  height: 922px;
+  padding: 437px 877px 295px;
+  top: 562px;
+  left: 3035px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .menu {
+  position: relative;
+  width: fit-content;
+  margin-top: -221px;
+  margin-bottom: -219px;
+  margin-left: -96px;
+  margin-right: -96px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .startgame-wrapper {
+  width: 3140px;
+  height: 905px;
+  padding: 295px 877px;
+  top: 570px;
+  left: 6857px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .startgame {
+  position: relative;
+  width: fit-content;
+  margin-top: -158.5px;
+  margin-bottom: -156.5px;
+  margin-left: -856px;
+  margin-right: -856px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .lederboard-wrapper {
+  width: 4499px;
+  height: 920px;
+  padding: 295px 877px;
+  top: 613px;
+  left: 10569px;
+  transform: rotate(0.34deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .lederboard {
+  position: relative;
+  width: fit-content;
+  margin-top: -151.25px;
+  margin-bottom: -149.25px;
+  margin-left: -366.34px;
+  margin-right: -366.34px;
+  transform: rotate(-0.37deg);
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .png-transparent {
+  position: absolute;
+  width: 952px;
+  height: 966px;
+  top: 509px;
+  left: 17421px;
+  object-fit: cover;
+}
+
+.page .text-wrapper {
+  position: absolute;
+  width: 1195px;
+  top: 1631px;
+  left: 17299px;
+  transform: rotate(-0.42deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .rectangle-2 {
+  position: absolute;
+  width: 13512px;
+  height: 8017px;
+  top: 2392px;
+  left: 5818px;
+  background-color: #f6f6f6;
+  border: 100px solid;
+  border-color: #000000;
+}
+
+.page .user {
+  top: 3236px;
+  position: absolute;
+  left: 7858px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .line {
+  top: 2492px;
+  left: 7174px;
+  position: absolute;
+  width: 132px;
+  height: 7865px;
+}
+
+.page .line-2 {
+  top: 2444px;
+  left: 12228px;
+  position: absolute;
+  width: 132px;
+  height: 7865px;
+}
+
+.page .user-2 {
+  top: 4533px;
+  position: absolute;
+  left: 7858px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .user-3 {
+  top: 6047px;
+  position: absolute;
+  left: 7858px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .data {
+  top: 3236px;
+  position: absolute;
+  left: 12574px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .data-2 {
+  top: 4533px;
+  position: absolute;
+  left: 12574px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .data-3 {
+  top: 6047px;
+  position: absolute;
+  left: 12574px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .element {
+  top: 3236px;
+  left: 6288px;
+  position: absolute;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .element-2 {
+  top: 4533px;
+  left: 6035px;
+  position: absolute;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .element-3 {
+  top: 6047px;
+  left: 6017px;
+  position: absolute;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .user-4 {
+  top: 4133px;
+  left: 1548px;
+  position: absolute;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .user-5 {
+  top: 6424px;
+  left: 1954px;
+  position: absolute;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .most-points {
+  position: absolute;
+  top: 3608px;
+  left: 939px;
+  font-family: "Overlock-Black", Helvetica;
+  font-weight: 900;
+  color: #08ff03;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .most-games-played {
+  position: absolute;
+  top: 5661px;
+  left: 939px;
+  font-family: "Overlock-Black", Helvetica;
+  font-weight: 900;
+  color: #0af805;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .average-points {
+  position: absolute;
+  top: 7714px;
+  left: 939px;
+  font-family: "Overlock-Black", Helvetica;
+  font-weight: 900;
+  color: #65f80b;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .user-6 {
+  position: absolute;
+  top: 8634px;
+  left: 1954px;
+  font-family: "Outfit-Medium", Helvetica;
+  font-weight: 500;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 16px;
+  line-height: normal;
+}
+
+.page .overlap {
+  width: 19230px;
+  height: 1184px;
+  top: 11731px;
+  background-color: #fcf8f8;
+  position: absolute;
+  left: 0;
+}
+
+.page .rectangle-3 {
+  position: absolute;
+  width: 19230px;
+  height: 1184px;
+  top: 0;
+  left: 0;
+  background-color: #fcf8f8;
+}
+
+.page .text-wrapper-2 {
+  position: absolute;
+  width: 5417px;
+  top: 307px;
+  left: 530px;
+  transform: rotate(-0.5deg);
+  font-family: "Calistoga-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 200px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .github-logo {
+  position: absolute;
+  width: 535px;
+  height: 535px;
+  top: 284px;
+  left: 8682px;
+  object-fit: cover;
+}
+

@@ -1,0 +1,318 @@
+.page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.page .div {
+  background-color: #ffffff;
+  overflow: hidden;
+  width: 19262px;
+  height: 12895px;
+  position: relative;
+}
+
+.page .overlap {
+  position: absolute;
+  width: 19262px;
+  height: 2444px;
+  top: 0;
+  left: 0;
+}
+
+.page .rectangle {
+  position: absolute;
+  width: 19262px;
+  height: 2442px;
+  top: 2px;
+  left: 0;
+}
+
+.page .img {
+  position: absolute;
+  width: 1395px;
+  height: 1445px;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+.page .frame {
+  width: 3060px;
+  height: 922px;
+  padding: 437px 877px 295px;
+  top: 715px;
+  left: 3542px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .menu {
+  position: relative;
+  width: fit-content;
+  margin-top: -221px;
+  margin-bottom: -219px;
+  margin-left: -96px;
+  margin-right: -96px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .startgame-wrapper {
+  width: 3140px;
+  height: 905px;
+  padding: 295px 877px;
+  top: 723px;
+  left: 6857px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .startgame {
+  position: relative;
+  width: fit-content;
+  margin-top: -158.5px;
+  margin-bottom: -156.5px;
+  margin-left: -856px;
+  margin-right: -856px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .lederboard-wrapper {
+  width: 4499px;
+  height: 920px;
+  padding: 295px 877px;
+  top: 736px;
+  left: 10394px;
+  transform: rotate(0.34deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: absolute;
+  background-color: var(--neige);
+  border-radius: 500px;
+}
+
+.page .lederboard {
+  position: relative;
+  width: fit-content;
+  margin-top: -151.25px;
+  margin-bottom: -149.25px;
+  margin-left: -366.34px;
+  margin-right: -366.34px;
+  transform: rotate(-0.37deg);
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: var(--rouge);
+  font-size: 500px;
+  letter-spacing: 20px;
+  line-height: normal;
+}
+
+.page .png-transparent {
+  position: absolute;
+  width: 952px;
+  height: 966px;
+  top: 662px;
+  left: 17422px;
+  object-fit: cover;
+}
+
+.page .text-wrapper {
+  position: absolute;
+  width: 1195px;
+  top: 1672px;
+  left: 17299px;
+  transform: rotate(-0.42deg);
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 400px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .overlap-group {
+  position: absolute;
+  width: 19230px;
+  height: 1339px;
+  top: 11711px;
+  left: 0;
+}
+
+.page .rectangle-2 {
+  position: absolute;
+  width: 19230px;
+  height: 1184px;
+  top: 0;
+  left: 0;
+  background-color: #fcf8f8;
+}
+
+.page .text-wrapper-2 {
+  position: absolute;
+  width: 5417px;
+  top: 615px;
+  left: 176px;
+  transform: rotate(-0.5deg);
+  font-family: "Calistoga-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 200px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.page .github-logo {
+  position: absolute;
+  width: 535px;
+  height: 535px;
+  top: 287px;
+  left: 9023px;
+  object-fit: cover;
+}
+
+.page .submit-your-details {
+  position: absolute;
+  width: 7156px;
+  top: 2821px;
+  left: 6342px;
+  font-family: "Adamina-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 500px;
+  letter-spacing: 40px;
+  line-height: normal;
+}
+
+.page .overlap-2 {
+  position: absolute;
+  width: 7375px;
+  height: 1348px;
+  top: 4248px;
+  left: 6517px;
+}
+
+.page .rectangle-3 {
+  position: absolute;
+  width: 7375px;
+  height: 784px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  border-radius: 1000px;
+}
+
+.page .email {
+  position: absolute;
+  width: 3339px;
+  top: 736px;
+  left: 141px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 500px;
+  letter-spacing: 40px;
+  line-height: normal;
+}
+
+.page .rectangle-4 {
+  position: absolute;
+  width: 7375px;
+  height: 808px;
+  top: 5645px;
+  left: 6517px;
+  background-color: #d9d9d9;
+  border-radius: 1000px;
+}
+
+.page .rectangle-5 {
+  position: absolute;
+  width: 7375px;
+  height: 808px;
+  top: 7200px;
+  left: 6517px;
+  background-color: #d9d9d9;
+  border-radius: 1000px;
+}
+
+.page .name {
+  position: absolute;
+  width: 3140px;
+  top: 3548px;
+  left: 6780px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 500px;
+  letter-spacing: 40px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.page .password {
+  position: absolute;
+  width: 3140px;
+  top: 6500px;
+  left: 6602px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 500px;
+  letter-spacing: 40px;
+  line-height: normal;
+  white-space: nowrap;
+}
+
+.page .overlap-3 {
+  position: absolute;
+  width: 3774px;
+  height: 825px;
+  top: 8513px;
+  left: 6819px;
+}
+
+.page .rectangle-6 {
+  position: absolute;
+  width: 3178px;
+  height: 825px;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+}
+
+.page .submit {
+  position: absolute;
+  width: 3140px;
+  top: 107px;
+  left: 634px;
+  font-family: "Outfit-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #000000;
+  font-size: 500px;
+  letter-spacing: 40px;
+  line-height: normal;
+  white-space: nowrap;
+}

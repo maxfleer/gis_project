@@ -8,18 +8,22 @@
             <div class="colNopadding">
                 <div class="row ml-0 mr-0">
                     <div class="colNopadding" align="center">
-                <img src="{{ game_location.picture_URL_1 }}" height="250px" width="463.25px">
+                        {% load static %}
+                <img src="{% static "./locations/"+game_location.picture_name_1 %}" height="250px" width="463.25px">
                     </div>
                     <div class="colNopadding" align="center">
-                <img src="{{ game_location.picture_URL_2 }}" height="250px" width="463.25px">
+                        {% load static %}
+                <img src="{% static "./locations/"+game_location.picture_name_2 %}" height="250px" width="463.25px">
                     </div>
                 </div>
                 <div class="row ml-0 mr-0">
                     <div class="colNopadding" align="center">
-                <img src="{{ game_location.picture_URL_3 }}" height="250px" width="463.25px">
+                        {% load static %}
+                <img src="{% static "./locations/"+game_location.picture_name_3 %}" height="250px" width="463.25px">
                     </div>
                     <div class="colNopadding" align="center">
-                <img src="{{ game_location.picture_URL_4 }}" height="250px" width="463.25px">
+                        {% load static %}
+                <img src="{% static "./locations/"+game_location.picture_name_4 %}" height="250px" width="463.25px">
                     </div>
                 </div>
             </div>

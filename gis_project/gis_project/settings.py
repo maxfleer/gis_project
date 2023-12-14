@@ -17,8 +17,8 @@ from botocore.exceptions import ClientError
 import json
 
 
-secret_name = "gis-db-secret"
-region_name = "us-east-1"
+secret_name = "Project-DB-Access"
+region_name = "eu-central-1"
 
 # Create a Secrets Manager client
 session = boto3.session.Session()

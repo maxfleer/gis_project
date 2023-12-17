@@ -153,7 +153,19 @@ def gamestart (request, user_id = 0, location_id = 1, latitude_player = 0, longi
         # create folium map
         map = create_folium_map(map_filepath, center_coord, location_id, user_id)
 
-        return render(request, "gamestart.html", {"game_location":game_location, "map":map})
+        path = "./locations/"
+
+        picture1 = path+game_location.picture_name_1
+        picture2 = path+game_location.picture_name_2
+        picture3 = path+game_location.picture_name_3
+        picture4 = path+game_location.picture_name_4
+
+        return render(request, "gamestart.html", {"game_location":game_location,
+                                                    "map":map,
+                                                    "picture1": picture1,
+                                                    "picture2": picture2,
+                                                    "picture3": picture3,
+                                                    "picture4": picture4,})
 
 
 def leaderboard (request):

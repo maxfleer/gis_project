@@ -189,9 +189,9 @@ def profile (request):
 
 def calcPoints (latitude_db, longitude_db, latitude_player, longitude_player):
     dist = distance.distance((latitude_db, longitude_db), (latitude_player, longitude_player)).km
-    if (dist < 25): return 1000
+    if (dist < 1): return 1000
 
-    dist = dist - 25
+    dist = dist - 1
     if (dist - 1000 >= 0): return 0
     else: return 1000 - dist
 

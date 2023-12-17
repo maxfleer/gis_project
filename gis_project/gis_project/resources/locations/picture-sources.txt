@@ -1,0 +1,9 @@
+1_1.png:    https://www.nknews.org/2023/03/us-official-poses-with-statue-likely-built-by-sanctioned-north-korean-studio/
+1_2.png:    https://mrimhotep.org/we-finally-know-who-the-mysterious-woman-under-construction-in-benin-republic-represents/
+1_3.png:    https://www.bellanaija.com/2022/08/benin-amazon-statue-dahomey/
+1_4.png:    https://www.hurriyetdailynews.com/benin-welcomes-hollywood-take-on-women-warriors-177074
+
+2_1.png:
+2_2.png:
+2_3.png:
+2_4.png:

@@ -3,7 +3,58 @@
 1_3.png:    https://www.bellanaija.com/2022/08/benin-amazon-statue-dahomey/
 1_4.png:    https://www.hurriyetdailynews.com/benin-welcomes-hollywood-take-on-women-warriors-177074
 
-2_1.png:
-2_2.png:
-2_3.png:
-2_4.png:
+2_1.png:    https://www.radweg-berlin-leipzig.de/staedte-sehenswuerdigkeiten-landschaften/brandenburger-tor
+2_2.png:    https://www.grossstadturlaub.de/brandenburger-tor-berlin/
+2_3.png:    https://www.istockphoto.com/de/foto/brandenburger-tor-in-berlin-deutschland-gm183020970-14169778
+2_4.png:    https://www.citytourcard.com/de/blog/das-brandenburger-tor
+
+3_1.png:    https://usa-entdecker.de/new-york-sehenswuerdigkeiten/freiheitsstatue/
+3_2.png:    https://www.reisevor9.de/destinations/krone-der-freiheitsstatue-wieder-fuer-besucher-geoeffnet
+3_3.png:    https://www.nord-amerika.de/intime-gestaendnisse-der-freiheitsstatue/
+3_4.png:    https://lovingnewyork.de/sehenswuerdigkeiten/alles-wissenswerte-zur-freiheitsstatue-in-new-york/
+
+4_1.png:    https://asienspiegel.ch/2018/10/tokyo-tower-eine-japanische-ikone
+4_2.png:    https://travelmate.tech/de/japan/tokio/tokyo-tower/praesentation
+4_3.png:    https://www.istockphoto.com/de/foto/tokyo-tower-japan-tokyo-skyline-der-stadt-und-stadtbild-gm669545870-122376725
+4_4.png:    https://tokyocheapo.com/place/tokyo-tower/
+
+5_1.png:    https://www.travelandleisure.com/attractions/landmarks-monuments/eiffel-tower-facts
+5_2.png:    https://www.cntraveler.com/stories/2014-03-28/eiffel-tower-paris-anniversary-125-years
+5_3.png:    https://www.viator.com/de-DE/Paris-attractions/Eiffel-Tower/d479-a89
+5_4.png:    https://www.klook.com/de/activity/6063-exclusive-behind-the-scenes-eiffel-tower-guided-tour-paris/
+
+6_1.png:    https://de.sydney.com/destinations/sydney/sydney-city/city-centre/attractions/sydney-opera-house
+6_2.png:    https://www.tripsavvy.com/sydney-opera-house-complete-guide-4783244
+6_3.png:    https://www.discoveryuk.com/tv-guide/dmax/
+6_4.png:    https://www.cntraveler.com/story/50th-anniversary-sydney-opera-house
+
+7_1.png:    https://www.britannica.com/topic/Christ-the-Redeemer
+7_2.png:    https://timesofindia.indiatimes.com/travel/travel-news/brazils-world-famous-christ-the-redeemer-reopens-after-a-hiatus-of-5-months/articleshow/77608567.cms
+7_3.png:    https://www.outlooktraveller.com/travelnews/brazils-christ-the-redeemer-reopens
+7_4.png:    https://rederiohoteis.com/en/christ-the-redeemer-get-to-know-the-history-of-this-wonder-of-the-modern-world/
+
+8_1.png:    https://www.nationalgeographic.com/history/article/giza-pyramids
+8_2.png:    https://www.pyramid-of-giza.com/de/
+8_3.png:    https://www.kayak.com/Giza.25999.guide
+8_4.png:    https://www.discovermagazine.com/the-sciences/giza-pyramids
+
+9_1.png:    https://en.wikipedia.org/wiki/Red_Square
+9_2.png:    https://www.lonelyplanet.com/russia/moscow/kremlin-kitay-gorod/attractions/red-square/a/poi-sig/1286797/1336043
+9_3.png:    https://carusel.tours/red_square
+9_4.png:    https://www.themoscowtimes.com/2019/02/27/red-square-a64644
+
+10_1.png:    https://www.cntraveler.com/activities/cape-town/table-mountain
+10_2.png:    https://www.dreamstime.com/photos-images/table-mountain.html
+10_3.png:    https://www.kanaga-at.com/en/trip-info/south-africa/cape-town-between-table-mountain-and-the-ocean/
+10_4.png:    https://www.capetowndaytours.co.za/inventory/cape-town-city-table-mountain-private-1-2-day-tour
+
+11_1.png:    https://www.viator.com/de-DE/Beijing-attractions/Forbidden-City-Imperial-Palace/d321-a169
+11_2.png:    https://en.wikipedia.org/wiki/Forbidden_City
+11_3.png:    https://www.getyourguide.de/verbotene-stadt-l4267/
+11_4.png:    https://travel.sygic.com/de/poi/verbotene-stadt-poi:20983
+
+12_1.png:    https://www.walksinsiderome.com/de/blog/experience-an-unforgettable-colosseum-arena-tour/
+12_2.png:    https://www.viator.com/de-DE/tours/Rome/Colosseum-Skip-the-line-ticket-Self-Guided-Tour/d511-48974P7
+12_3.png:    https://www.livescience.com/roman-colosseum
+12_4.png:    https://www.worldhistory.org/Colosseum/
+

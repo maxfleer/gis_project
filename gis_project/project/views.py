@@ -12,6 +12,7 @@ import random
 import xyzservices.providers as xyz
 import folium
 from django.views.decorators.csrf import csrf_exempt
+import django.contrib.auth
 # Create your views here.
 
 def find_variable_name(html, name_start):
@@ -178,9 +179,10 @@ def leaderboard (request):
 
     return render(request, "leaderboard.html", {"users":users})
 
-@login_required
-def logout (request):
-    return render(request, "logged_out.html")
+#@login_required
+#def logout (request):
+#    django.contrib.auth.logout(request)
+#    return render(request, "logged_out.html")
 
 @login_required
 def profile (request):

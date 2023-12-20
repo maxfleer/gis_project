@@ -58,6 +58,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ORIGIN_ALLOW_ALL = True
+
+CSRF_TRUSTED_ORIGINS = ["http://ec2-3-67-193-113.eu-central-1.compute.amazonaws.com"]
 
 # Application definition
 

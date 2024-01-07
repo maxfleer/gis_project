@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
+
+.cc-navbar{
+    font-family: 'Merriweather', serif ;
+    background-color:  rgb(217, 217, 217,1);
+}
+
+
+.cc-navbar .nav-link {
+border-bottom:  1px solid transparent;
+transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease-out;
+}
+
+.cc-navbar .nav-link:hover {
+    padding-bottom: 20px;
+    border-bottom-color: green ;
+}
+
+.btn-order {
+    color: var(--bs-teal);
+    border-color: green;
+    transition: 0.5s;
+}
+
+.btn-order:hover,
+.btn-order:active {
+    color: green;
+    background-color:var (--bs-teal) ;
+}
+
+.page h2 {
+    margin-left: 600px;
+}
+  /* Add style to the form */
+form {
+    margin-top: 10px; /* Add a space between the title and the form */
+    max-width: 400px; /* Adjust form width to suit your design */
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Style for form field labels */
+form label {
+    display: block;/* Display each label on a different line */
+    margin-bottom: 5px; /* Add a space between each label and the corresponding field */
+    font-weight: bold; /* Make label text bold */
+}
+
+/* Style for form input fields */
+form input {
+    width: 100%; /* Fill the width of the parent container */
+    padding: 6px; /* Add a little padding around the input field */
+    margin-bottom: 9px;/* Add a space between each input field */
+    box-sizing: border-box; /* Include padding and border in width and height */
+}
+
+/* Style for form submit button */
+form input[type="submit"] {
+    background-color: #333; /* Button background color */
+    color: white;/* Button text color */
+    cursor: pointer; /* Set cursor as pointer on button hover */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(217, 217, 217, 1);
+    height: 60px; 
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Paragraph centering styles */
+  footer p {
+    margin-top: 1px;
+    text-align: center; 
+    color: black;
+    font-size: 9px;
+  }
+  
+ /* Styles to center the link */
+  footer a {
+    display: inline-block;
+    margin-top: 20px; 
+    color: black;
+  }

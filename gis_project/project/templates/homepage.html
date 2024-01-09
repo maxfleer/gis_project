@@ -1,40 +1,22 @@
 {% extends "base_generic.html" %}
-
-{% block content%}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col" align="center">
-            {% load static %}
-                <img src="{% static 'placeholder.png' %}" height="440" width="640">
-        </div>
-        <div class="col">
-
+{% block content %}
+  <!--  for the play-button logo -->
+  <section class="main-page py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                {% load static %}
+                <img src="{% static 'Map_Mania_Logo.png' %}" alt="" style="width:500px; height:auto" class="img-thumbnail"/>
+            </div>
         </div>
     </div>
+</section>
 
+<!--  for the text -->
+<div class="container">
     <div class="row">
-        <div class="col">
-
-        </div>
-        <div class="col-9">
-            <b style="font-size:27px">
-                IN THE CAPTIVATING WORLD OF 'MAP MANIA' PLAYERS ARE INVITED TO TEST THEIR GEOGRAPHICAL KNOWLEDGE AND INTUITION. THE GAME BEGINS BY 
-                PRESENTING BEAUTIFUL PHOTOS OF A FAMOUS  LANDMARK OR PARK FROM AROUND THE WORLD TO THE PLAYER. THESE CAPTIVATING IMAGES PROVIDE THEM
-                WITH A VISUAL GLIMPSE OF THE LOCATION THEY WILL NEED TO IDENTIFY.
-            </b>
-        </br>
-            <b style="font-size:27px">
-                THEN THE CHALLENGE BEGINS. PLAYERS ARE TRANSPORTED TO A GLOBAL GEOGRAPHICAL MAP AND THEIR TASK IS TO LOCATE THE EXACT POSITION OF 
-                THE LANDMARK IN QUESTION. THE EXCITING TWIST IS THAT PLAYERS HAVE NO ADDITIONEL INFORMATION TO GUIDE THEM. IT ALL RELIES ON THEIR 
-                ABILITY TO MEMORIZE THE PHOTO AND ESTIMATE THE LOCATION ACCURATELY: 
-            </b>
-        </div>
-        <div class="col">
-
-        </div>
+        <p>In the captivating world of 'MapMania,' players are invited to test their geographical knowledge and intuition. The game begins by presenting users with a beautiful photo of a famous landmark or park from around the world. These captivating images provide them with a visual glimpse of the location they will need to identify.
+            Then, the challenge begins. Players are transported to a global geographical map, and their task is to point on the map the precise location of the landmark or park they've just seen in the photo. The exciting twist is that players have no additional information to guide them. It all relies on their ability to memorize the photo and estimate the location accurately.</p>
     </div>
 </div>
 {% endblock %}

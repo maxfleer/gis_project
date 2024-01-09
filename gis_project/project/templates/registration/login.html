@@ -1,5 +1,9 @@
 {% extends "base_generic.html" %}
 
+{% block title %}
+<title>Login</title>
+{% endblock %}
+
 {% block content %}
 <div style="position relative;margin-left:15px;margin-right:15px;">
   {% if form.errors %}
@@ -15,27 +19,35 @@
     {% endif %}
   {% endif %}
 
-  <form method="post" action="{% url 'login' %}">
+  <form style="position relative;margin-left:15px;margin-right:15px;" method="post" action="{% url 'login' %}">
     {% csrf_token %}
     <table>
       <tr>
         <td>{{ form.username.label_tag }}</td>
+      </tr>
+      <tr>
         <td>{{ form.username }}</td>
       </tr>
       <tr>
         <td>{{ form.password.label_tag }}</td>
+      </tr>
+      <tr>
         <td>{{ form.password }}</td>
       </tr>
     </table>
-    <input type="submit" value="login">
+    <div style="margin-top:50px;">
+    <input type="submit" value="Login" class="btn btn-primary">
     <input type="hidden" name="next" value="{{ next }}">
+    </div>
   </form>
   </br>
   </br>
+  <div style="position relative;margin-left:15px;margin-right:15px;">
   <p>Not registered yet? Register now</p>
+  </div>
+  <div style="position relative;margin-left:15px;margin-right:15px;">
   <a href="{% url "register" %}" class="btn btn-primary">Register</a>
+  </div>
 </div>
-  {# Assumes you setup the password_reset view in your URLconf #}
-  {# #<p><a href="{% url 'password_reset' %}">Lost password?</a></p> #}
 
 {% endblock %}

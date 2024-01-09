@@ -1,6 +1,12 @@
 {% extends "base_generic.html" %}
 
+{% block title %}
+<title>Logged Out</title>
+{% endblock %}
+
 {% block content %}
-  <p>Logged out!</p>
-  <a href="{% url 'homepage'%}">Click here to get to the homepage.</a>
+<div style="position relative;margin-left:25%;margin-top:5%;">
+  Logged out!
+  <a class="btn btn-primary" href="{% url 'homepage'%}">Click here to get to the homepage!</a>
+</div>
 {% endblock %}

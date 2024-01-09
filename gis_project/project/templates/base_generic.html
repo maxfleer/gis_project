@@ -29,7 +29,10 @@
             </div>
             <div class="col-lg" align="right">
               {% if user.is_authenticated %}
-                <a href="{% url "logout" %}" class="btn btn-primary" align="right">Logout</a>
+  		<form method="post" action="{% url 'logout' %}">
+    		    {% csrf_token %}
+    		    <button type="submit" class="btn btn-primary">Logout</button>
+  		</form>
               {% else %}
                 <a href="{% url "login" %}" class="btn btn-primary" align="right">Login</a>
               {% endif %}

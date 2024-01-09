@@ -1,13 +1,18 @@
 <!-- templates/registration/signup.html -->
 {% extends "base_generic.html" %}
 
+{% block title %}
+<title>Register</title>
+{% endblock %}
+
+
 {% block content %}
-<div style="position relative;margin-left:15px;margin-right:15px;">
-  <h2>Sign up</h2>
+<div style="position relative;margin-left:15px;margin-right:15px;margin-top:2%;">
+  <h2 style="margin-left:47%">Register</h2>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button type="submit">Sign Up</button>
+    <button class="btn btn-primary" type="submit">Sign Up</button>
   </form>
 </div>
 {% endblock %}

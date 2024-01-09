@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&family=Merriweather:wght@300;400;700&display=swap');
 
-.divMiddle{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -50px;
-  margin-left: -50px;
-  width: 300px;
-  height: 100px;
-}
-
-.textMiddle{
-  position: center;
-}​
-
-.cc-navbar{
+​.cc-navbar{
     font-family: 'Merriweather', serif ;
     background-color:  rgb(217, 217, 217,1);
 }

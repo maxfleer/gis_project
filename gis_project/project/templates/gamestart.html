@@ -1,36 +1,41 @@
 {% extends "base_generic.html" %}
 
 {% block content%}
-
-<div style="margin-left:25px;margin-right:25px;">
-    <div class="container-fluid">
+<section class="block-img py-5">
+    <div class="container">
         <div class="row">
-            <div class="colNopadding">
-                <div class="row ml-0 mr-0">
-                    <div class="colNopadding" align="center">
-                        {% load static %}
-                <img src="{% static picture1 %}" height="250px" width="463.25px">
-                    </div>
-                    <div class="colNopadding" align="center">
-                        {% load static %}
-                <img src="{% static picture2 %}" height="250px" width="463.25px">
-                    </div>
-                </div>
-                <div class="row ml-0 mr-0">
-                    <div class="colNopadding" align="center">
-                        {% load static %}
-                <img src="{% static picture3 %}" height="250px" width="463.25px">
-                    </div>
-                    <div class="colNopadding" align="center">
-                        {% load static %}
-                <img src="{% static picture4 %}" height="250px" width="463.25px">
-                    </div>
-                </div>
+        <div class="col-md-6 col-sm">
+            <div class="first-img   mb-3">
+                {% load static %}
+                <img src="{% static picture1 %}" alt=""  style="max-width: 50%;">
+
             </div>
-            <div class="colNopadding" align="right" height="500px" width="926.5px">
-                {{ map | safe }}
+            <div class="first-img   mb-3">
+                {% load static %}
+                <img src="{% static picture2 %}" alt=""  style="max-width: 50%;">
+
+            </div>
+
+            
+            <div class="first-img   mb-3">
+                {% load static %}
+                <img src="{% static picture3 %}" alt=""  style="max-width: 50%;">
+
+            </div>
+            <div class="first-img   mb-3">
+                {% load static %}
+                <img src="{% static picture4 %}" alt=""  style="max-width: 50%;">
+
             </div>
         </div>
+        <div class="col-md-6 col-sm">
+            <div class="first-img   mb-3">
+                {{ map | safe }}
+
+            </div>
+
+        </div>
+        </div>
     </div>
-</div>
+</section>
 {% endblock %}

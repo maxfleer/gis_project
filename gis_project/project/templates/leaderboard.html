@@ -1,43 +1,39 @@
 {% extends "base_generic.html" %}
 
-{% block content%}
+{% block title %}
+    <title>Leaderboard</title>
+{% endblock %}
+
+{% block content %}
 
 {% load django_template_maths %}
 
-<div class="container">
-    <div class="row">
-        <div class="col" align="center">
-            <h2>Username</h2>
-        </div>
-        <div class="col" align="center">
-            <h2>Games Played</h2>
-        </div>
-        <div class="col" align="center">
-            <h2>Sum of Points</h2>
-        </div>
-        <div class="col" align="center">
-            <h2>Average Points per Game</h2>
-        </div>
+<section class="table-boot py-5">
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Rank</th>
+                <th scope="col">Username</th>
+                <th scope="col">Games Played</th>
+                <th scope="col">Sum of Points</th>
+                <th scope="col">Average Points per Game</th>
+              </tr>
+            </thead>
+            <tbody>
+            {% for user in users %}
+              <tr>
+                <th scope="row">{{ forloop.counter }}</th>
+                <td>{{user.username}}</td>
+                <td>{{user.number_of_games_played}}</td>
+                <td>{{user.sum_of_points}}</td>
+                <td>{{user.sum_of_points|div:user.number_of_games_played|floatformat:2}}</td>
+              </tr>
+            {% endfor %}
+            </tbody>
+          </table>
     </div>
-    {% for user in users %}
-    <div class="row">
-        <div class="col" align="center">
-            {{user.username}}
-        </div>
-        <div class="col" align="center">
-            {{user.number_of_games_played}}
-        </div>
-        <div class="col" align="center">
-            {{user.sum_of_points}}
-        </div>
-        <div class="col" align="center">
-            {{user.sum_of_points|div:user.number_of_games_played|floatformat:2}}
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
-
+</section>
 
 
 {% endblock %}

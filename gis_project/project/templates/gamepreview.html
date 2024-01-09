@@ -9,24 +9,24 @@
         <div class="col-md-6 col-sm">
             <div class="first-img   mb-3">
                 {% load static %}
-                <img src="{% static 'placeholder.png' %}" alt=""  style="max-width: 50%;">
+                <img src="{% static 'image_Eiffel.jpeg' %}" alt=""  style="max-width: 50%;">
 
             </div>
             <div class="first-img   mb-3">
                 {% load static %}
-                <img src="{% static 'placeholder.png' %}" alt=""  style="max-width: 50%;">
+                <img src="{% static 'img-berlin.jpg' %}" alt=""  style="max-width: 50%;">
 
             </div>
 
             
             <div class="first-img   mb-3">
                 {% load static %}
-                <img src="{% static 'placeholder.png' %}" alt=""  style="max-width: 50%;">
+                <img src="{% static 'img-rome.webp' %}" alt=""  style="max-width: 50%;">
 
             </div>
             <div class="first-img   mb-3">
                 {% load static %}
-                <img src="{% static 'placeholder.png' %}" alt=""  style="max-width: 50%;">
+                <img src="{% static 'img-venice.png' %}" alt=""  style="max-width: 50%;">
 
             </div>
         </div>
@@ -34,16 +34,16 @@
             <div class="first-img   mb-3">
                 {% load static %}
                 <img src="{% static 'map_placeholder.jpg' %}" alt=""  style="max-width: 100%; width: 1000px;">
+                <div style="margin-left:40%;margin-right:40%;margin-top:10px">
+                    <form action={% url "GETgamestart" request.user.id %} method="GET">
+                        <button type="submit" class="btn btn-primary">Start Round</button>
+                    </form>
+                </div>
 
             </div>
 
         </div>
         </div>
-    </div>
-    <div style="margin-left:47%;margin-right:47%">
-        <form action={% url "GETgamestart" request.user.id %} method="GET">
-            <button type="submit" class="btn btn-primary">Start Round</button>
-        </form>
     </div>
     <div style="margin-bottom:50px">
 

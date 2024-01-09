@@ -8,48 +8,30 @@
 
 {% load django_template_maths %}
 
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-2">
-
-        </div>
-        <div class="col" align="right">
-            <b>Number of Games Played:</b>
-        </div>
-        <div class="col" align="left">
-            <a>{{request.user.number_of_games_played}}</a>
-        </div>
-        <div class="col-2">
-
-        </div>
+<section class="table-boot py-5">
+    <div class="container" style="max-width:30%">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Profile of:</th>
+                <td>{{request.user.username}}</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Number of Games Played:</th>
+                <td>{{request.user.number_of_games_played}}</td>
+              </tr>
+              <tr>
+                <th>Sum of Points:</th>
+                <td>{{request.user.sum_of_points}}</td>
+              </tr>
+              <tr>
+                <th>Average Points per Game:</th>
+                <td>{{request.user.sum_of_points|div:request.user.number_of_games_played|floatformat:2}}</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
-    <div class="row">
-        <div class="col-2">
-
-        </div>
-        <div class="col" align="right">
-            <b>Sum of Points:</b>
-        </div>
-        <div class="col" align="left">
-            <a>{{request.user.sum_of_points}}</a>
-        </div>
-        <div class="col-2">
-
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-2">
-
-        </div>
-        <div class="col" align="right">
-            <b>Average Points per Game:</b>
-        </div>
-        <div class="col" align="left">
-            <a>{{request.user.sum_of_points|div:request.user.number_of_games_played|floatformat:2}}</a>
-        </div>
-        <div class="col-2">
-
-        </div>
-    </div>
-</div>
+</section>
 {% endblock %}

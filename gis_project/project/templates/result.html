@@ -1,25 +1,30 @@
 {% extends "base_generic.html" %}
-
+{% block title %}
+<title>Result</title>
+{% endblock %}
 {% block content%}
 
-<div class="container">
-    <div class="row">
-        <div class="col" align="center">
-            Congratulations {{request.user.username}} !
-        </div>
-        <div class="col" align="center">
-            You just achieved {{ points |floatformat:2 }} points !
-        </div>
-        <div class="col" align="center">
-            The location you had to search was: {{ location_name }}
-        </div>
-        <div class="col" align="center">
-            Distance from guess to acutal location: {{ distance_from_location |floatformat:2 }} km
-        </div>
+<section class="table-boot py-5">
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Congratulations</th>
+                <th scope="col">You just achieved</th>
+                <th scope="col">The location you had to search was:</th>
+                <th scope="col">Distance from guess to acutal location:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">{{request.user.username}}</th>
+                <td>{{ points |floatformat:2 }} points</td>
+                <td>{{ location_name }}</td>
+                <td>{{ distance_from_location |floatformat:2 }} km</td>
+              </tr>
+            </tbody>
+          </table>
     </div>
-</div>
-
-
-
+</section>
 
 {% endblock %}

@@ -6,7 +6,6 @@ from .forms import RegisterForm
 from .models import *
 from geopy import distance
 import random
-import xyzservices.providers as xyz
 import folium
 from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
@@ -43,7 +42,6 @@ def create_folium_map(map_filepath, center_coord, location_id, user_id):
     root = map.get_root()
     map.render()
     root.script.add_child(folium.Element('''
-        // custom code
             function latLngPop(e) {
                 '''+popup_variable_name+'''
                     .setLatLng(e.latlng)
@@ -63,7 +61,6 @@ def create_folium_map(map_filepath, center_coord, location_id, user_id):
                     `)
                     .openOn('''+map_variable_name+''');
             }
-            // end custom code
         '''))
 
     return map._repr_html_()

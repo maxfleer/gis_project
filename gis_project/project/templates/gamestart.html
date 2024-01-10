@@ -4,48 +4,42 @@
 {% endblock %}
 {% block content%}
 <section class="block-img py-5">
-    <div class="container">
-        <div class="row">
-        <div class="col-md-6 col-sm">
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static picture1 %}" target="_blank">
-                <img src="{% static picture1 %}" alt=""  style="max-width: 50%;">
-                </a>
-
+    <div style="width:100%;display:flex">
+        <div style="width:50%;height:100%;display:flex">
+            <div style="width:50%">
+                <div style="width:100%;height:45%">
+                    {% load static %}
+                    <a href="{% static picture1 %}" target="_blank" style="width:100%;height:100%">
+                    <img src="{% static picture1 %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </a>
+                </div>
+                <div style="width:100%;height:45%">
+                    {% load static %}
+                    <a href="{% static picture2 %}" target="_blank" style="width:100%;height:100%">
+                    <img src="{% static picture2 %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </a>
+                </div>
             </div>
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static picture2 %}" target="_blank">
-                <img src="{% static picture2 %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-
-            
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static picture3 %}" target="_blank">
-                <img src="{% static picture3 %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static picture4 %}" target="_blank">
-                <img src="{% static picture4 %}" alt=""  style="max-width: 50%;">
-                </a>
-
+            <div style="width:50%">
+                <div style="width:100%;height:45%">
+                    {% load static %}
+                    <a href="{% static picture3 %}" target="_blank" style="width:100%;height:100%">
+                    <img src="{% static picture3 %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </a>
+                </div>
+                <div style="width:100%;height:45%">
+                    {% load static %}
+                    <a href="{% static picture4 %}" target="_blank" style="width:100%;height:100%">
+                    <img src="{% static picture4 %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="col-md-6 col-sm">
-            <div class="first-img   mb-3">
+        <div style="width:45%;height:100%;display:flex;margin-left:10px">
                 {{ map | safe }}
-
-            </div>
-
-        </div>
         </div>
     </div>
+    <diV style="margin-bottom:50px"></div>
+
 </section>
 {% endblock %}

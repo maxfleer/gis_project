@@ -4,57 +4,39 @@
 {% endblock %}
 {% block content%}
 <section class="block-img py-5">
-    <div class="container">
-        <div class="row">
-        <div class="col-md-6 col-sm">
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static 'image_Eiffel.jpeg' %}" target="_blank">
-                <img src="{% static 'image_Eiffel.jpeg' %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static 'img-berlin.jpg' %}" target="_blank">
-                <img src="{% static 'img-berlin.jpg' %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-
-            
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static 'img-rome.webp' %}" target="_blank">
-                <img src="{% static 'img-rome.webp' %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-            <div class="first-img   mb-3">
-                {% load static %}
-                <a href="{% static 'img-venice.png' %}" target="_blank">
-                <img src="{% static 'img-venice.png' %}" alt=""  style="max-width: 50%;">
-                </a>
-
-            </div>
-        </div>
-        <div class="col-md-6 col-sm">
-            <div class="first-img   mb-3">
-                {% load static %}
-                <img src="{% static 'map_placeholder.jpg' %}" alt=""  style="max-width: 100%; width: 1000px;">
-                <div style="margin-left:40%;margin-right:40%;margin-top:10px">
-                    <form action={% url "GETgamestart" request.user.id %} method="GET">
-                        <button type="submit" class="btn btn-primary">Start Round</button>
-                    </form>
+        <div style="width:100%;display:flex;margin-left:3%">
+            <div style="width:50%;height:100%;display:flex">
+                <div style="width:50%">
+                    <div style="width:100%;height:45%">
+                        {% load static %}
+                        <img src="{% static 'image_Eiffel.jpeg' %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </div>
+                    <div style="width:100%;height:45%">
+                        {% load static %}
+                        <img src="{% static 'img-berlin.jpg' %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </div>
                 </div>
-
+                <div style="width:50%">
+                    <div style="width:100%;height:45%">
+                        {% load static %}
+                        <img src="{% static 'img-rome.webp' %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </div>
+                    <div style="width:100%;height:45%">
+                        {% load static %}
+                        <img src="{% static 'img-venice.png' %}" alt="" style="width:100%;height:100%;object-fit:fill">
+                    </div>
+                </div>
             </div>
-
+            <div style="width:45%;height:100%;display:flex;">
+                 {% load static %}
+                 <img src="{% static 'map_placeholder.jpg' %}" style="width:100%;height:100%;object-fit:fill">
+            </div>
         </div>
+        <div style="margin-left:13%">
+            <form action={% url "GETgamestart" request.user.id %} method="GET">
+                <button type="submit" class="btn btn-primary">Start Round</button>
+            </form>
         </div>
-    </div>
-    <div style="margin-bottom:50px">
-
 </section>
 {% endblock %}
 

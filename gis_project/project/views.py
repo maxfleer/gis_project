@@ -140,11 +140,11 @@ def profile (request):
 
 def calcPoints (latitude_db, longitude_db, latitude_player, longitude_player):
     dist = distance.distance((latitude_db, longitude_db), (latitude_player, longitude_player)).km
-    if (dist < 1): return 1000
+    if (dist < 5): return 1000
 
-    dist = dist - 1
-    if (dist - 1000 >= 0): return 0
-    else: return 1000 - dist
+    dist = dist - 5
+    if (dist - 1500 >= 0): return 0
+    else: return 1000 - (dist * 0.66) 
 
 
 class RegisterView (generic.CreateView):

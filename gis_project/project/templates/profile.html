@@ -28,7 +28,17 @@
               </tr>
               <tr>
                 <th>Average Points per Game:</th>
-                <td>{{request.user.sum_of_points|div:request.user.number_of_games_played|floatformat:2}}</td>
+                <td>
+                  <script>
+                    var sum = {{request.user.sum_of_points}};
+                    var games = {{request.user.number_of_games_played}};
+                    var avg = sum/games;
+                    if (isNaN(avg)) {
+                      avg = 0;
+                    }
+                    document.write(avg.toFixed(2));
+                  </script>
+                </td>
               </tr>
             </tbody>
           </table>

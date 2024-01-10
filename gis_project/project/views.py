@@ -1,8 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponse
-from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth.forms import UserCreationForm
 from django.views import generic
 from django.urls import reverse_lazy
 from .forms import RegisterForm
@@ -12,7 +9,6 @@ import random
 import xyzservices.providers as xyz
 import folium
 from django.views.decorators.csrf import csrf_exempt
-import django.contrib.auth
 # Create your views here.
 
 def find_variable_name(html, name_start):
@@ -26,64 +22,26 @@ def find_variable_name(html, name_start):
     return html[starting_index:ending_index]
 
 def create_folium_map(map_filepath, center_coord, location_id, user_id):
-    # create folium map
-    map = folium.Map(center_coord, zoom_start=12)
-
-    # add popup
+    map = folium.Map(center_coord, zoom_start=12, tiles=None)
     folium.LatLngPopup().add_to(map)
 
-    #tile_provider = xyz.Stadia.StamenWatercolor
-
-    # Update the URL to include the API key placeholder
-    #tile_provider["url"] = tile_provider["url"] + \
-    #    "?api_key=3dd06860-7f01-4788-84c7-e0e74854b30d"
-
-    # Create the folium TileLayer, specifying the API key
-    #folium.TileLayer(
-    #    tiles=tile_provider.build_url(
-    #        api_key='3dd06860-7f01-4788-84c7-e0e74854b30d'),
-    #    attr=tile_provider.attribution,
-    #    name=tile_provider.name,
-    #    max_zoom=tile_provider.max_zoom,
-    #    detect_retina=True
-    #).add_to(map)
+    folium.TileLayer(
+    tiles='https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+    attr='Esri',
+    name='Esri Satellite',
+    overlay=False,
+    control=True
+    ).add_to(map)
 
     folium.LayerControl().add_to(map)
-
-    # store the map to a file
     map.save(map_filepath)
-
-    # read ing the folium file
     html = None
     with open(map_filepath, 'r') as mapfile:
         html = mapfile.read()
-
-    # find variable names
     map_variable_name = find_variable_name(html, "map_")
     popup_variable_name = find_variable_name(html, "lat_lng_popup_")
-
     root = map.get_root()
-
-    # add to `<head>` before folium elements
-    #root.header.add_child(folium.Element("<style> ... </style>"))
-
-    # add to `<body>` before folium elements
-    # root.html.add_child(folium.Element("<h1>STACKOVERFLOW EXAMPLE</h1>"))
-
-    # add to `<script>` before folium elements
-    #root.script.add_child(folium.Element("alert('My JavaScript Code');"))
-
-    # add folium elements
-    # root.render()  # used by `save()`
-    map.render()      # used by `save()`
-
-    # add to `<head>` after folium elements
-    #root.header.add_child(folium.Element("<style> ... </style>"))
-
-    # add to `<body>` after folium elements
-    #root.html.add_child(folium.Element("<h1>STACKOVERFLOW EXAMPLE</h1>"))
-
-    # add to `<script>` after folium elements
+    map.render()
     root.script.add_child(folium.Element('''
         // custom code
             function latLngPop(e) {
@@ -151,7 +109,6 @@ def gamestart (request, user_id = 0, location_id = 1, latitude_player = 0, longi
         location_id = game_location.id
         user_id = user.id
 
-        # create folium map
         map = create_folium_map(map_filepath, center_coord, location_id, user_id)
 
         path = "./locations/"
@@ -178,11 +135,6 @@ def leaderboard (request):
     users.sort(key = lambda x: (x.sum_of_points / x.number_of_games_played), reverse=True)
 
     return render(request, "leaderboard.html", {"users":users})
-
-#@login_required
-#def logout (request):
-#    django.contrib.auth.logout(request)
-#    return render(request, "logged_out.html")
 
 @login_required
 def profile (request):

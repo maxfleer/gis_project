@@ -27,7 +27,9 @@ secret_dict = json.loads(secret)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-DEBUG = False
+SECRET_KEY = 'django-insecure-l=woxf!@mw4(0q184phx(u(%5uwu+)7sn*xu6=wsasivq#pqxr'
+
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
